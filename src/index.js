@@ -1,8 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { arc } from'd3';
+// import './index.css';
+// import App from './App';
+
+const width = 960;
+const height = 500;
+
+
+const App = () => (
+<svg width={width} height={height}>
+  <circle 
+  cx="480"
+  cy="250"
+  r="245"
+  fill="yellow"
+  stroke="black"
+  stroke-width="10"
+/>
+</svg>
+);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +28,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
